@@ -264,7 +264,9 @@ reports/three_class/  dataset audit, evaluation, predictions, cross-domain and r
 Aspiring AI Engineer | Python | Machine Learning | NLP | Deep Learning
 
 - GitHub: [Sakshi-Deshwal](https://github.com/Sakshi-Deshwal)
+- Linkdin: [Connect with me](https://www.linkedin.com/in/sakshi-deshwal)
 - Project: [SentimentIQ](https://github.com/Sakshi-Deshwal/SentimentIQ)
+  
 
 If you find this project useful, consider giving it a ⭐ on GitHub.
 

@@ -254,3 +254,21 @@ data/processed/   womens_clothing_reviews_cleaned.csv (the Amazon file is read f
 models/three_class/   trained models and model_card.json
 reports/three_class/  dataset audit, evaluation, predictions, cross-domain and robustness reports
 ```
+
+---
+
+## Author
+
+**Sakshi Deshwal**
+
+Aspiring AI Engineer | Python | Machine Learning | NLP | Deep Learning
+
+- GitHub: [Sakshi-Deshwal](https://github.com/Sakshi-Deshwal)
+- Project: [SentimentIQ](https://github.com/Sakshi-Deshwal/SentimentIQ)
+
+If you find this project useful, consider giving it a ⭐ on GitHub.
+
+---
+
+*Built as a hands-on project to explore NLP, traditional machine learning, and deep learning for real-world customer review analysis.*
+

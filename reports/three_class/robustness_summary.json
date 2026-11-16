@@ -1,0 +1,485 @@
+{
+  "n": 39,
+  "models": {
+    "naive_bayes": {
+      "accuracy": 0.6666666666666666,
+      "f1_macro": 0.6358543417366946,
+      "accuracy_clear_labels_only": 0.7333333333333333,
+      "n_clear": 30,
+      "accuracy_by_challenge": {
+        "ambiguous": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 4
+        },
+        "factual_neutral": {
+          "accuracy": 0.5,
+          "correct": 1,
+          "n": 2
+        },
+        "informal": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "n": 3
+        },
+        "long": {
+          "accuracy": 0.6666666666666666,
+          "correct": 2,
+          "n": 3
+        },
+        "negation": {
+          "accuracy": 0.6666666666666666,
+          "correct": 4,
+          "n": 6
+        },
+        "sarcasm": {
+          "accuracy": 0.3333333333333333,
+          "correct": 2,
+          "n": 6
+        },
+        "short": {
+          "accuracy": 0.8,
+          "correct": 4,
+          "n": 5
+        },
+        "spelling_mistakes": {
+          "accuracy": 1.0,
+          "correct": 5,
+          "n": 5
+        },
+        "strong_negative": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "n": 3
+        },
+        "strong_positive": {
+          "accuracy": 1.0,
+          "correct": 2,
+          "n": 2
+        }
+      },
+      "confusion_matrix": [
+        [
+          13,
+          1,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          1,
+          0,
+          9
+        ]
+      ],
+      "labels": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ]
+    },
+    "logistic_regression": {
+      "accuracy": 0.5641025641025641,
+      "f1_macro": 0.557422969187675,
+      "accuracy_clear_labels_only": 0.5666666666666667,
+      "n_clear": 30,
+      "accuracy_by_challenge": {
+        "ambiguous": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 4
+        },
+        "factual_neutral": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 2
+        },
+        "informal": {
+          "accuracy": 0.6666666666666666,
+          "correct": 2,
+          "n": 3
+        },
+        "long": {
+          "accuracy": 0.6666666666666666,
+          "correct": 2,
+          "n": 3
+        },
+        "negation": {
+          "accuracy": 0.8333333333333334,
+          "correct": 5,
+          "n": 6
+        },
+        "sarcasm": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 6
+        },
+        "short": {
+          "accuracy": 0.8,
+          "correct": 4,
+          "n": 5
+        },
+        "spelling_mistakes": {
+          "accuracy": 0.8,
+          "correct": 4,
+          "n": 5
+        },
+        "strong_negative": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "n": 3
+        },
+        "strong_positive": {
+          "accuracy": 1.0,
+          "correct": 2,
+          "n": 2
+        }
+      },
+      "confusion_matrix": [
+        [
+          9,
+          1,
+          8
+        ],
+        [
+          0,
+          4,
+          7
+        ],
+        [
+          1,
+          0,
+          9
+        ]
+      ],
+      "labels": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ]
+    },
+    "linear_svm": {
+      "accuracy": 0.5897435897435898,
+      "f1_macro": 0.5793650793650793,
+      "accuracy_clear_labels_only": 0.6,
+      "n_clear": 30,
+      "accuracy_by_challenge": {
+        "ambiguous": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 4
+        },
+        "factual_neutral": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 2
+        },
+        "informal": {
+          "accuracy": 0.6666666666666666,
+          "correct": 2,
+          "n": 3
+        },
+        "long": {
+          "accuracy": 0.6666666666666666,
+          "correct": 2,
+          "n": 3
+        },
+        "negation": {
+          "accuracy": 1.0,
+          "correct": 6,
+          "n": 6
+        },
+        "sarcasm": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 6
+        },
+        "short": {
+          "accuracy": 0.8,
+          "correct": 4,
+          "n": 5
+        },
+        "spelling_mistakes": {
+          "accuracy": 0.8,
+          "correct": 4,
+          "n": 5
+        },
+        "strong_negative": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "n": 3
+        },
+        "strong_positive": {
+          "accuracy": 1.0,
+          "correct": 2,
+          "n": 2
+        }
+      },
+      "confusion_matrix": [
+        [
+          9,
+          1,
+          8
+        ],
+        [
+          0,
+          4,
+          7
+        ],
+        [
+          0,
+          0,
+          10
+        ]
+      ],
+      "labels": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ]
+    },
+    "mlp": {
+      "accuracy": 0.5384615384615384,
+      "f1_macro": 0.5333333333333333,
+      "accuracy_clear_labels_only": 0.5333333333333333,
+      "n_clear": 30,
+      "accuracy_by_challenge": {
+        "ambiguous": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 4
+        },
+        "factual_neutral": {
+          "accuracy": 0.5,
+          "correct": 1,
+          "n": 2
+        },
+        "informal": {
+          "accuracy": 0.6666666666666666,
+          "correct": 2,
+          "n": 3
+        },
+        "long": {
+          "accuracy": 0.6666666666666666,
+          "correct": 2,
+          "n": 3
+        },
+        "negation": {
+          "accuracy": 0.6666666666666666,
+          "correct": 4,
+          "n": 6
+        },
+        "sarcasm": {
+          "accuracy": 0.16666666666666666,
+          "correct": 1,
+          "n": 6
+        },
+        "short": {
+          "accuracy": 0.8,
+          "correct": 4,
+          "n": 5
+        },
+        "spelling_mistakes": {
+          "accuracy": 0.4,
+          "correct": 2,
+          "n": 5
+        },
+        "strong_negative": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "n": 3
+        },
+        "strong_positive": {
+          "accuracy": 1.0,
+          "correct": 2,
+          "n": 2
+        }
+      },
+      "confusion_matrix": [
+        [
+          9,
+          3,
+          6
+        ],
+        [
+          1,
+          5,
+          5
+        ],
+        [
+          2,
+          1,
+          7
+        ]
+      ],
+      "labels": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ]
+    },
+    "textcnn": {
+      "accuracy": 0.5641025641025641,
+      "f1_macro": 0.5601851851851852,
+      "accuracy_clear_labels_only": 0.5666666666666667,
+      "n_clear": 30,
+      "accuracy_by_challenge": {
+        "ambiguous": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 4
+        },
+        "factual_neutral": {
+          "accuracy": 0.5,
+          "correct": 1,
+          "n": 2
+        },
+        "informal": {
+          "accuracy": 0.6666666666666666,
+          "correct": 2,
+          "n": 3
+        },
+        "long": {
+          "accuracy": 0.6666666666666666,
+          "correct": 2,
+          "n": 3
+        },
+        "negation": {
+          "accuracy": 0.6666666666666666,
+          "correct": 4,
+          "n": 6
+        },
+        "sarcasm": {
+          "accuracy": 0.16666666666666666,
+          "correct": 1,
+          "n": 6
+        },
+        "short": {
+          "accuracy": 0.8,
+          "correct": 4,
+          "n": 5
+        },
+        "spelling_mistakes": {
+          "accuracy": 0.6,
+          "correct": 3,
+          "n": 5
+        },
+        "strong_negative": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "n": 3
+        },
+        "strong_positive": {
+          "accuracy": 1.0,
+          "correct": 2,
+          "n": 2
+        }
+      },
+      "confusion_matrix": [
+        [
+          10,
+          2,
+          6
+        ],
+        [
+          1,
+          5,
+          5
+        ],
+        [
+          3,
+          0,
+          7
+        ]
+      ],
+      "labels": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ]
+    },
+    "bilstm": {
+      "accuracy": 0.48717948717948717,
+      "f1_macro": 0.4669489816495261,
+      "accuracy_clear_labels_only": 0.5666666666666667,
+      "n_clear": 30,
+      "accuracy_by_challenge": {
+        "ambiguous": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 4
+        },
+        "factual_neutral": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 2
+        },
+        "informal": {
+          "accuracy": 0.6666666666666666,
+          "correct": 2,
+          "n": 3
+        },
+        "long": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "n": 3
+        },
+        "negation": {
+          "accuracy": 0.5,
+          "correct": 3,
+          "n": 6
+        },
+        "sarcasm": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 6
+        },
+        "short": {
+          "accuracy": 0.6,
+          "correct": 3,
+          "n": 5
+        },
+        "spelling_mistakes": {
+          "accuracy": 0.6,
+          "correct": 3,
+          "n": 5
+        },
+        "strong_negative": {
+          "accuracy": 1.0,
+          "correct": 3,
+          "n": 3
+        },
+        "strong_positive": {
+          "accuracy": 1.0,
+          "correct": 2,
+          "n": 2
+        }
+      },
+      "confusion_matrix": [
+        [
+          8,
+          4,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          1,
+          1,
+          8
+        ]
+      ],
+      "labels": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ]
+    }
+  }
+}

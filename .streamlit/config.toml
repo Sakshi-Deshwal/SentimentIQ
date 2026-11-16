@@ -1,0 +1,6 @@
+[server]
+# Upload limit for the Bulk page only. The large local Amazon file is read from disk, not uploaded.
+maxUploadSize = 50
+
+[theme]
+base = "light"

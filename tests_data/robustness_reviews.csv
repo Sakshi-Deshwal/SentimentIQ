@@ -1,0 +1,40 @@
+test_id,review_text,expected_sentiment,challenge_type,label_confidence
+R01,"Oh great, another charger that dies in two weeks. Just what I always wanted. Fantastic quality.",Negative,sarcasm,clear
+R02,"Wow, the delivery guy only took four hours to find my building. Truly world class service.",Negative,sarcasm,clear
+R03,Love how the app logs me out every single time I open it. Really enjoying this feature.,Negative,sarcasm,clear
+R04,Five stars for the hotel if you enjoy sleeping next to a construction site. Very peaceful!,Negative,sarcasm,clear
+R05,"Brilliant, the pizza arrived cold and the cheese was somehow still raw. Chef's kiss.",Negative,sarcasm,clear
+R06,"Sure, it's waterproof, if by waterproof you mean it leaks within five minutes of light rain. Great job.",Negative,sarcasm,clear
+R15,"Produkt is realy good, delivry was qick and pakaging was neat. Wil buy agin.",Positive,spelling_mistakes,clear
+R16,Wurst purchase ever. Stoped working after 3 days and costumer care is usles.,Negative,spelling_mistakes,clear
+R17,"The batery lasts alot longer then I thougt, very impresed.",Positive,spelling_mistakes,clear
+R18,"Recieved a damged item, the box was crushed and the screan was cracked. Dissapointed.",Negative,spelling_mistakes,clear
+R19,"Its ok i guess, does what it sais, nothing speshul.",Neutral,spelling_mistakes,debatable
+R21,Love it!,Positive,short,clear
+R22,Total waste of money.,Negative,short,clear
+R23,It's okay.,Neutral,short,debatable
+R24,Arrived on time.,Neutral,short,clear
+R26,"Not bad, not great.",Neutral,short,debatable
+R27,"I have been using this air fryer for about a month now and I honestly cannot believe how much I use it. Chips come out crispy with almost no oil, chicken wings are juicy inside, and cleaning takes two minutes because the basket is non stick. It heats up fast, the timer is accurate and it is barely louder than a fan. My family now asks for it every evening. Worth every rupee and I would happily buy it again as a gift.",Positive,long,clear
+R28,"Booked this hotel for a three night family trip based on the photos and reviews, and it was a disaster from start to finish. Check in took over an hour because they had lost our reservation, the room smelled of damp, the air conditioning leaked onto the bed and the bathroom door would not lock. When we complained at the front desk the manager just shrugged and said nothing could be done. We left a day early and are still waiting for a refund.",Negative,long,clear
+R30,"Ordered the paperback edition which arrived in four days in standard packaging. It has around 320 pages, a plain cover, and the print size is average. The book is divided into twelve chapters with a short index at the back. I have only just started reading it so I cannot comment on the content yet, but the shipping and listing details matched what was described.",Neutral,long,clear
+R31,Not good at all. I wouldn't recommend this to anyone.,Negative,negation,clear
+R32,"I can't complain, it works exactly as described and arrived early.",Positive,negation,clear
+R33,"The food was not bad, but nothing I would go back for.",Neutral,negation,debatable
+R34,Never had any problem with this blender. It doesn't make much noise and it doesn't leak.,Positive,negation,clear
+R35,"Not impressed with the quality, and the battery isn't great either.",Negative,negation,clear
+R36,"It isn't the worst hotel I've stayed in, but I wouldn't call it comfortable.",Negative,negation,debatable
+R37,"Well, it is a phone.",Neutral,ambiguous,debatable
+R38,Interesting product. I will see how it holds up.,Neutral,ambiguous,debatable
+R39,Wasn't what I expected.,Negative,ambiguous,debatable
+R41,"Does the job, I suppose.",Neutral,ambiguous,debatable
+R42,"ngl this hoodie slaps, super soft and fits perfect. 10/10 would buy again lol",Positive,informal,clear
+R43,"bro the app keeps crashing every 5 mins, so annoying. uninstalled.",Negative,informal,clear
+R45,"tbh worth every rupee, no cap",Positive,informal,clear
+R46,"Absolutely phenomenal! Best purchase I've made this year, exceeded every expectation. Highly recommend!!!",Positive,strong_positive,clear
+R47,"Outstanding service, the staff went above and beyond. Perfect stay, we will definitely return.",Positive,strong_positive,clear
+R48,"Absolute garbage. Worst experience of my life, a complete scam. Stay away!!!",Negative,strong_negative,clear
+R49,"Disgusting food, filthy table, rude staff. Never coming back, avoid at all costs.",Negative,strong_negative,clear
+R50,Complete rip-off. The product broke on day one and they refused to refund me. Horrible.,Negative,strong_negative,clear
+R51,The kettle holds 1.5 litres and comes with a one year warranty. The cord is about 80 cm long.,Neutral,factual_neutral,clear
+R52,"Ordered on Monday, delivered Thursday. Packaging was standard. Size medium, colour as listed.",Neutral,factual_neutral,clear

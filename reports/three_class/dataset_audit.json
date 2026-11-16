@@ -1,0 +1,110 @@
+{
+  "task": "three_class",
+  "label_source": "rating-derived weak labels (1-2 Negative, 3 Neutral, 4-5 Positive)",
+  "seed": 42,
+  "split_fractions": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "sampling_strategy": "proportional",
+  "sampling_applied": "before splitting, stratified by sentiment",
+  "domains_used": [
+    "product_food",
+    "product_clothing"
+  ],
+  "domains_skipped": {},
+  "domains": {
+    "product_food": {
+      "path": "/home/claude/external/amazon_fine_food_reviews_sample_50k.csv",
+      "file_mb": 23.4,
+      "rows_in_file": 50000,
+      "sampling": "chunked stratified (proportional)",
+      "sample_size_requested": 30000,
+      "rows_loaded": 29847,
+      "duplicate_texts_removed": 0,
+      "rows_after_dedupe": 29847,
+      "label_mapping_mismatches": 0,
+      "class_counts_after_dedupe": {
+        "Negative": 4309,
+        "Neutral": 2262,
+        "Positive": 23276
+      },
+      "sha256": "aa3188cb0848d1c49ca1a27bfb0d2b8d7c27a58775856b3f1a59a5376e94b806",
+      "avg_words": 79.7,
+      "rows_after_cross_domain_dedupe": 29847,
+      "near_duplicates_removed_from_eval_splits": {
+        "validation": 2,
+        "test": 0
+      }
+    },
+    "product_clothing": {
+      "path": "/home/claude/sentiment_platform/data/processed/womens_clothing_reviews_cleaned.csv",
+      "file_mb": 8.2,
+      "rows_in_file": 22634,
+      "sampling": "none",
+      "sample_size_requested": null,
+      "rows_loaded": 22634,
+      "duplicate_texts_removed": 1,
+      "rows_after_dedupe": 22633,
+      "label_mapping_mismatches": 0,
+      "class_counts_after_dedupe": {
+        "Negative": 2369,
+        "Neutral": 2823,
+        "Positive": 17441
+      },
+      "sha256": "15f6edee3bcc1a8de5a8c3ee6014a513b9956bf4c1ac1189eddd977fde216a25",
+      "avg_words": 60.2,
+      "rows_after_cross_domain_dedupe": 22633,
+      "near_duplicates_removed_from_eval_splits": {
+        "validation": 1,
+        "test": 1
+      }
+    }
+  },
+  "cross_domain_identical_text_overlap": {
+    "product_food|product_clothing": 0
+  },
+  "cross_domain_near_duplicates_removed": {
+    "product_food|product_clothing": 0
+  },
+  "near_duplicate_rule": "TF-IDF cosine >= 0.9 on reviews with >= 6 tokens; shorter reviews are compared by exact match only",
+  "split_sizes": {
+    "train": 36735,
+    "validation": 7869,
+    "test": 7872
+  },
+  "split_class_counts": {
+    "train": {
+      "Negative": 4674,
+      "Neutral": 3559,
+      "Positive": 28502
+    },
+    "validation": {
+      "Negative": 1000,
+      "Neutral": 764,
+      "Positive": 6105
+    },
+    "test": {
+      "Negative": 1003,
+      "Neutral": 761,
+      "Positive": 6108
+    }
+  },
+  "split_domain_counts": {
+    "train": {
+      "product_food": 20892,
+      "product_clothing": 15843
+    },
+    "validation": {
+      "product_food": 4475,
+      "product_clothing": 3394
+    },
+    "test": {
+      "product_food": 4478,
+      "product_clothing": 3394
+    }
+  },
+  "model_input": "review_text only (rating, source, domain, review_id are never features)",
+  "language_note": "Both datasets are English-language reviews; no translation is applied."
+}

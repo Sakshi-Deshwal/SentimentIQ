@@ -1,0 +1,121 @@
+{
+  "family": "Neural network",
+  "history": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "train_loss": [
+      0.9520242414637392,
+      0.7756447496601753,
+      0.6534290224674755,
+      0.5424864394966236,
+      0.42472406668664325,
+      0.3107170538292526
+    ],
+    "train_acc": [
+      0.6094732543895468,
+      0.7323261195045597,
+      0.7851367905267456,
+      0.826105893561998,
+      0.8591533959439227,
+      0.8934803321083435
+    ],
+    "val_loss": [
+      0.8413416147232056,
+      0.7926434874534607,
+      0.7773635983467102,
+      0.7870136499404907,
+      0.9311955571174622,
+      1.0209754705429077
+    ],
+    "val_acc": [
+      0.7102554327106366,
+      0.6875079425594104,
+      0.7482526369297242,
+      0.7410090227474901,
+      0.7751937984496124,
+      0.7792603888677088
+    ],
+    "val_f1_macro": [
+      0.5336445368315949,
+      0.5436625004962581,
+      0.5899255391669932,
+      0.5933541508217385,
+      0.6046983318640025,
+      0.6074152234894429
+    ]
+  },
+  "best_epoch": 3,
+  "best_val_loss": 0.7773635983467102,
+  "stopped_early": true,
+  "epochs_run": 6,
+  "train_seconds": 931.42,
+  "device": "cpu",
+  "train_config": {
+    "epochs": 20,
+    "batch_size": 128,
+    "lr": 0.002,
+    "weight_decay": 1e-05,
+    "patience": 3,
+    "min_delta": 0.0001,
+    "grad_clip": 1.0,
+    "seed": 42,
+    "use_class_weights": true
+  },
+  "parameters": 2734787,
+  "vocab_size": 20005,
+  "max_len": 160,
+  "n_train": 36735,
+  "n_val": 7869,
+  "fit_mode": "train_only",
+  "class_weighted_loss": true,
+  "task": "three_class",
+  "domains": [
+    "product_food",
+    "product_clothing"
+  ],
+  "domains_skipped": [],
+  "split_sizes": {
+    "train": 36735,
+    "validation": 7869,
+    "test": 7872
+  },
+  "sample_sizes": {
+    "product_food": 30000,
+    "product_clothing": null
+  },
+  "label_source": "rating-derived weak labels",
+  "key": "bilstm",
+  "labels": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "class_to_id": {
+    "Negative": 0,
+    "Neutral": 1,
+    "Positive": 2
+  },
+  "arch_config": {
+    "arch": "bilstm",
+    "vocab_size": 20005,
+    "n_classes": 3,
+    "embed_dim": 128,
+    "hidden_dim": 96,
+    "num_layers": 1,
+    "dropout": 0.4
+  },
+  "featurizer": {
+    "type": "vocab",
+    "max_len": 160,
+    "vocab_size": 20005
+  },
+  "saved_utc": "2026-11-09T21:49:04+00:00",
+  "torch_version": "2.15.0+cu132",
+  "scikit_learn": "1.9.1"
+}

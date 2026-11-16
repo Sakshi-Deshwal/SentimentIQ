@@ -1,0 +1,143 @@
+{
+  "family": "Neural network",
+  "history": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "train_loss": [
+      1.0600665599046897,
+      0.8874917303848967,
+      0.82125516993441,
+      0.7583579695904613,
+      0.6979594719366133,
+      0.6459612690965968,
+      0.5807121589781882,
+      0.5101834614893134,
+      0.4546930910122221
+    ],
+    "train_acc": [
+      0.5332516673472165,
+      0.6512317952905948,
+      0.6934531101129713,
+      0.7297944739349395,
+      0.7590581189601198,
+      0.7781135157207023,
+      0.804491629236423,
+      0.8280114332380564,
+      0.8449435143596026
+    ],
+    "val_loss": [
+      0.8820165991783142,
+      0.8186909556388855,
+      0.7788240313529968,
+      0.7548257112503052,
+      0.7404853105545044,
+      0.7309576869010925,
+      0.7388607263565063,
+      0.753957211971283,
+      0.7901049256324768
+    ],
+    "val_acc": [
+      0.5974075486084636,
+      0.6941161519888169,
+      0.7347820561697801,
+      0.7563858177659168,
+      0.7525733892489516,
+      0.7530817130512136,
+      0.7783708222137502,
+      0.7812936840767569,
+      0.7769729317575296
+    ],
+    "val_f1_macro": [
+      0.48609045164628756,
+      0.5466340966326197,
+      0.5842656878224014,
+      0.5917723981647696,
+      0.6086068415780946,
+      0.6000082066772613,
+      0.6255157960578855,
+      0.6193807126779399,
+      0.6116390098121841
+    ]
+  },
+  "best_epoch": 6,
+  "best_val_loss": 0.7309576869010925,
+  "stopped_early": true,
+  "epochs_run": 9,
+  "train_seconds": 409.7,
+  "device": "cpu",
+  "train_config": {
+    "epochs": 20,
+    "batch_size": 128,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "patience": 3,
+    "min_delta": 0.0001,
+    "grad_clip": 1.0,
+    "seed": 42,
+    "use_class_weights": true
+  },
+  "parameters": 2715443,
+  "vocab_size": 20005,
+  "max_len": 160,
+  "n_train": 36735,
+  "n_val": 7869,
+  "fit_mode": "train_only",
+  "class_weighted_loss": true,
+  "task": "three_class",
+  "domains": [
+    "product_food",
+    "product_clothing"
+  ],
+  "domains_skipped": [],
+  "split_sizes": {
+    "train": 36735,
+    "validation": 7869,
+    "test": 7872
+  },
+  "sample_sizes": {
+    "product_food": 30000,
+    "product_clothing": null
+  },
+  "label_source": "rating-derived weak labels",
+  "key": "textcnn",
+  "labels": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "class_to_id": {
+    "Negative": 0,
+    "Neutral": 1,
+    "Positive": 2
+  },
+  "arch_config": {
+    "arch": "textcnn",
+    "vocab_size": 20005,
+    "n_classes": 3,
+    "embed_dim": 128,
+    "num_filters": 100,
+    "kernel_sizes": [
+      3,
+      4,
+      5
+    ],
+    "dropout": 0.5
+  },
+  "featurizer": {
+    "type": "vocab",
+    "max_len": 160,
+    "vocab_size": 20005
+  },
+  "saved_utc": "2026-11-09T21:33:28+00:00",
+  "torch_version": "2.15.0+cu132",
+  "scikit_learn": "1.9.1"
+}

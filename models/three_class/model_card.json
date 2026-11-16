@@ -1,0 +1,284 @@
+{
+  "models": {
+    "naive_bayes": {
+      "name": "Multinomial Naive Bayes",
+      "key": "naive_bayes",
+      "family": "Traditional ML",
+      "best_params": {
+        "clf__alpha": 0.1,
+        "clf__fit_prior": false,
+        "tfidf__min_df": 2,
+        "tfidf__ngram_range": [
+          1,
+          2
+        ]
+      },
+      "fit_seconds": 5.03,
+      "train_seconds": 75.79,
+      "tuning": {
+        "seconds": 70.8,
+        "best_val_macro_f1": 0.6497757382272624,
+        "n_configs": 16
+      },
+      "n_train": 36735,
+      "n_val": 7869,
+      "fit_mode": "train_only",
+      "class_weight": "balanced",
+      "task": "three_class",
+      "domains": [
+        "product_food",
+        "product_clothing"
+      ],
+      "domains_skipped": [],
+      "split_sizes": {
+        "train": 36735,
+        "validation": 7869,
+        "test": 7872
+      },
+      "sample_sizes": {
+        "product_food": 30000,
+        "product_clothing": null
+      },
+      "label_source": "rating-derived weak labels"
+    },
+    "logistic_regression": {
+      "name": "Logistic Regression",
+      "key": "logistic_regression",
+      "family": "Traditional ML",
+      "best_params": {
+        "clf__C": 2.0,
+        "tfidf__min_df": 2,
+        "tfidf__ngram_range": [
+          1,
+          2
+        ]
+      },
+      "fit_seconds": 13.99,
+      "train_seconds": 78.7,
+      "tuning": {
+        "seconds": 64.7,
+        "best_val_macro_f1": 0.6636321892867275,
+        "n_configs": 6
+      },
+      "n_train": 36735,
+      "n_val": 7869,
+      "fit_mode": "train_only",
+      "class_weight": "balanced",
+      "task": "three_class",
+      "domains": [
+        "product_food",
+        "product_clothing"
+      ],
+      "domains_skipped": [],
+      "split_sizes": {
+        "train": 36735,
+        "validation": 7869,
+        "test": 7872
+      },
+      "sample_sizes": {
+        "product_food": 30000,
+        "product_clothing": null
+      },
+      "label_source": "rating-derived weak labels"
+    },
+    "linear_svm": {
+      "name": "Linear SVM",
+      "key": "linear_svm",
+      "family": "Traditional ML",
+      "best_params": {
+        "clf__C": 0.5,
+        "tfidf__min_df": 2,
+        "tfidf__ngram_range": [
+          1,
+          2
+        ]
+      },
+      "fit_seconds": 7.05,
+      "train_seconds": 43.65,
+      "tuning": {
+        "seconds": 36.6,
+        "best_val_macro_f1": 0.6517766398225909,
+        "n_configs": 6
+      },
+      "n_train": 36735,
+      "n_val": 7869,
+      "fit_mode": "train_only",
+      "class_weight": "balanced",
+      "task": "three_class",
+      "domains": [
+        "product_food",
+        "product_clothing"
+      ],
+      "domains_skipped": [],
+      "split_sizes": {
+        "train": 36735,
+        "validation": 7869,
+        "test": 7872
+      },
+      "sample_sizes": {
+        "product_food": 30000,
+        "product_clothing": null
+      },
+      "label_source": "rating-derived weak labels"
+    },
+    "mlp": {
+      "name": "MLP (TF-IDF)",
+      "family": "Neural network",
+      "best_epoch": 1,
+      "best_val_loss": 0.6844339370727539,
+      "stopped_early": true,
+      "epochs_run": 4,
+      "train_seconds": 31.89,
+      "device": "cpu",
+      "train_config": {
+        "epochs": 20,
+        "batch_size": 128,
+        "lr": 0.001,
+        "weight_decay": 1e-05,
+        "patience": 3,
+        "min_delta": 0.0001,
+        "grad_clip": 1.0,
+        "seed": 42,
+        "use_class_weights": true
+      },
+      "parameters": 3873539,
+      "tfidf_features": 15000,
+      "n_train": 36735,
+      "n_val": 7869,
+      "fit_mode": "train_only",
+      "class_weighted_loss": true,
+      "task": "three_class",
+      "domains": [
+        "product_food",
+        "product_clothing"
+      ],
+      "domains_skipped": [],
+      "split_sizes": {
+        "train": 36735,
+        "validation": 7869,
+        "test": 7872
+      },
+      "sample_sizes": {
+        "product_food": 30000,
+        "product_clothing": null
+      },
+      "label_source": "rating-derived weak labels"
+    },
+    "textcnn": {
+      "name": "TextCNN",
+      "family": "Neural network",
+      "best_epoch": 6,
+      "best_val_loss": 0.7309576869010925,
+      "stopped_early": true,
+      "epochs_run": 9,
+      "train_seconds": 409.7,
+      "device": "cpu",
+      "train_config": {
+        "epochs": 20,
+        "batch_size": 128,
+        "lr": 0.001,
+        "weight_decay": 1e-05,
+        "patience": 3,
+        "min_delta": 0.0001,
+        "grad_clip": 1.0,
+        "seed": 42,
+        "use_class_weights": true
+      },
+      "parameters": 2715443,
+      "vocab_size": 20005,
+      "max_len": 160,
+      "n_train": 36735,
+      "n_val": 7869,
+      "fit_mode": "train_only",
+      "class_weighted_loss": true,
+      "task": "three_class",
+      "domains": [
+        "product_food",
+        "product_clothing"
+      ],
+      "domains_skipped": [],
+      "split_sizes": {
+        "train": 36735,
+        "validation": 7869,
+        "test": 7872
+      },
+      "sample_sizes": {
+        "product_food": 30000,
+        "product_clothing": null
+      },
+      "label_source": "rating-derived weak labels"
+    },
+    "bilstm": {
+      "name": "BiLSTM",
+      "family": "Neural network",
+      "best_epoch": 3,
+      "best_val_loss": 0.7773635983467102,
+      "stopped_early": true,
+      "epochs_run": 6,
+      "train_seconds": 931.42,
+      "device": "cpu",
+      "train_config": {
+        "epochs": 20,
+        "batch_size": 128,
+        "lr": 0.002,
+        "weight_decay": 1e-05,
+        "patience": 3,
+        "min_delta": 0.0001,
+        "grad_clip": 1.0,
+        "seed": 42,
+        "use_class_weights": true
+      },
+      "parameters": 2734787,
+      "vocab_size": 20005,
+      "max_len": 160,
+      "n_train": 36735,
+      "n_val": 7869,
+      "fit_mode": "train_only",
+      "class_weighted_loss": true,
+      "task": "three_class",
+      "domains": [
+        "product_food",
+        "product_clothing"
+      ],
+      "domains_skipped": [],
+      "split_sizes": {
+        "train": 36735,
+        "validation": 7869,
+        "test": 7872
+      },
+      "sample_sizes": {
+        "product_food": 30000,
+        "product_clothing": null
+      },
+      "label_source": "rating-derived weak labels"
+    }
+  },
+  "torch": "2.15.0+cu132",
+  "task": "three_class",
+  "labels": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "scikit_learn": "1.9.1",
+  "random_state": 42,
+  "model_input": "review_text only",
+  "domains": [
+    "product_food",
+    "product_clothing"
+  ],
+  "domains_skipped": [],
+  "seed": 42,
+  "sample_sizes": {
+    "product_food": 30000,
+    "product_clothing": null
+  },
+  "split_sizes": {
+    "train": 36735,
+    "validation": 7869,
+    "test": 7872
+  },
+  "label_source": "rating-derived weak labels",
+  "fit_mode": "train_only",
+  "updated_utc": "2026-11-09T21:49:04+00:00"
+}

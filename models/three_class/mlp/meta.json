@@ -1,0 +1,106 @@
+{
+  "family": "Neural network",
+  "history": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "train_loss": [
+      0.7849280709017697,
+      0.4597076687226088,
+      0.24611572355409211,
+      0.11048694916715489
+    ],
+    "train_acc": [
+      0.7361371988566762,
+      0.8512317952905948,
+      0.9156934803321083,
+      0.9560636994691711
+    ],
+    "val_loss": [
+      0.6844339370727539,
+      0.751705527305603,
+      1.018799901008606,
+      1.4263206720352173
+    ],
+    "val_acc": [
+      0.7712542889820816,
+      0.7542254416063032,
+      0.7951455076883975,
+      0.7993391790570593
+    ],
+    "val_f1_macro": [
+      0.6299617908863593,
+      0.6165771228020115,
+      0.627829414833359,
+      0.6194987769565045
+    ]
+  },
+  "best_epoch": 1,
+  "best_val_loss": 0.6844339370727539,
+  "stopped_early": true,
+  "epochs_run": 4,
+  "train_seconds": 31.89,
+  "device": "cpu",
+  "train_config": {
+    "epochs": 20,
+    "batch_size": 128,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "patience": 3,
+    "min_delta": 0.0001,
+    "grad_clip": 1.0,
+    "seed": 42,
+    "use_class_weights": true
+  },
+  "parameters": 3873539,
+  "tfidf_features": 15000,
+  "n_train": 36735,
+  "n_val": 7869,
+  "fit_mode": "train_only",
+  "class_weighted_loss": true,
+  "task": "three_class",
+  "domains": [
+    "product_food",
+    "product_clothing"
+  ],
+  "domains_skipped": [],
+  "split_sizes": {
+    "train": 36735,
+    "validation": 7869,
+    "test": 7872
+  },
+  "sample_sizes": {
+    "product_food": 30000,
+    "product_clothing": null
+  },
+  "label_source": "rating-derived weak labels",
+  "key": "mlp",
+  "labels": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "class_to_id": {
+    "Negative": 0,
+    "Neutral": 1,
+    "Positive": 2
+  },
+  "arch_config": {
+    "arch": "mlp",
+    "input_dim": 15000,
+    "n_classes": 3,
+    "hidden1": 256,
+    "hidden2": 128,
+    "dropout1": 0.3,
+    "dropout2": 0.2
+  },
+  "featurizer": {
+    "type": "tfidf"
+  },
+  "saved_utc": "2026-11-09T21:26:33+00:00",
+  "torch_version": "2.15.0+cu132",
+  "scikit_learn": "1.9.1"
+}

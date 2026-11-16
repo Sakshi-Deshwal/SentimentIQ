@@ -1,0 +1,11 @@
+numpy>=2.0
+pandas>=2.2
+scipy>=1.13
+# Pinned: joblib model files are only guaranteed to load with the scikit-learn version that trained them.
+scikit-learn==1.9.1
+torch>=2.2          # CPU build is enough: pip install torch --index-url https://download.pytorch.org/whl/cpu
+plotly>=5.20
+streamlit>=1.50
+joblib>=1.4
+pyarrow>=15
+pytest>=8
